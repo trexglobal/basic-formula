@@ -18,14 +18,15 @@ To setup very basic setting on your server.
     - git://github.com/trexglobal/basic-formula
   ```
 2. Setup [pillar](http://docs.saltstack.com/en/latest/topics/pillar/) from pillar.example
-3. Add basic to your server state file
+3. Add basic to your server [state file](http://docs.saltstack.com/en/latest/topics/tutorials/starting_states.html)
 
   ```yaml
   include:
       - basic
   ```
 
-  or to the top.sls file
+  or to the [top.sls](http://docs.saltstack.com/en/latest/ref/states/top.html) file
+  
 
   ```yaml
   base:
