@@ -4,5 +4,5 @@
     - user: root
     - group: root
     - mode: 755
-    - source: salt://sfym/files/profile/prompt.sh
+    - source: salt://basic/files/profile/prompt.sh
     - template: jinja
