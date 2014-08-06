@@ -1,0 +1,19 @@
+base_pkgs:
+  - wget
+  - vim
+  - htop
+  - git
+  - python-apt
+  - htop
+  - python
+  - python-software-properties
+  - ntp
+
+sshd_config:
+  Port: 1122
+  PasswordAuthentication: no
+  X11Forwarding: no
+  RSAAuthentication: yes
+  PubkeyAuthentication: yes
+  UsePAM: yes
+  Subsystem: "sftp /usr/lib/openssh/sftp-server"

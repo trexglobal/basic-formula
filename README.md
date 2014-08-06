@@ -1,4 +1,20 @@
-basic-formula
+Basic SaltStack Formula
 =============
 
-http://docs.saltstack.com/topics/conventions/formulas.html  
+To setup very basic setting on your server.
+
+## What it does
+
+1. Setup ssh config(you should use other than default port)
+2. Install basic set of packages
+3. Setup proper prompt host
+
+## Install
+
+1. Add remotes to /etc/salt/master
+```yaml
+gitfs_remotes:
+  - git://github.com/trexglobal/openssh-formula
+  - git://github.com/trexglobal/basic-formula
+```
+2. Setup [pillar](http://docs.saltstack.com/en/latest/topics/pillar/) from pillar.example 
