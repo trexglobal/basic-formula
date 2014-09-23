@@ -3,6 +3,6 @@
 #   - git://github.com/trexglobal/openssh-formula
 
 include:
-    - openssh.config
+    - openssh
     - basic.base_pkgs
     - basic.prompt
